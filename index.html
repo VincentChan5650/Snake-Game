@@ -1,0 +1,42 @@
+<!DOCTYPE hmtl>
+
+<html>
+<head>
+	<title>Snake Game</title>
+<!--	CSS File-->
+	<link rel='stylesheet' href='style.css' type='text/css'>
+
+</head>
+
+	
+<body>
+<!--	main div -->
+	<div class='container'>
+		
+<!--		The game over screen-->
+		<div id='overlay'>
+			Your Final Score: <span id="final_score"></span>
+			<br>
+			<a onClick="window.location.reload()" href='#'>Click to play again</a>
+		</div>
+		
+		<canvas id="canvas" width ="600" height ="450">
+			<p>Sorry, your browser does not suppor the canvas element.</p>
+		</canvas>
+	
+<!--	display user game stats-->
+	<div id = "stats">
+<!--		data generate by JS-->
+		<div id ="score"></div>
+		<div id ="high_score"></div>
+		<button onclick="resetScore()" id='reset_score'>Reset High Score</button>
+	</div>
+		
+	</div>
+	
+<!--	jQuery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" type='text/javascript'></script>
+<!--    JavaScript-->
+	<script src='script.js'></script>
+</body>
+</html>
